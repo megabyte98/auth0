@@ -53,7 +53,7 @@ const CreateProfile = ({ createProfile, history }) => {
 			</p>
             <small style = {req_style}>*  required field</small>
             <form className='form' onSubmit={e => onSubmit(e)}>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <select  style = {{fontSize:'16px', cursor:'pointer'}} name='status' value={status} onChange={e => onChange(e)}>
                         <option value='0'>Select Professional Status</option>
                         <option value='Developer'>Developer</option>
@@ -70,12 +70,12 @@ const CreateProfile = ({ createProfile, history }) => {
                         Give us an idea of where you are at in your career
 					</small>
                 </div>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <input 
                         type='text'
                         placeholder='Company'
                         name='company'
-                        style = {{fontSize:'16px'}}
+
                         value={company}
                         onChange={e => onChange(e)}
                     />
@@ -83,12 +83,12 @@ const CreateProfile = ({ createProfile, history }) => {
                         Could be your own company or one you work for or  if u are a student specify your college
 					</small>
                 </div>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <input
                         type='text'
                         placeholder='Website'
                         name='website'
-                        style = {{fontSize:'16px'}}
+
                         value={website}
                         onChange={e => onChange(e)}
                     />
@@ -96,11 +96,11 @@ const CreateProfile = ({ createProfile, history }) => {
                         Could be your own or a company website
 					</small>
                 </div>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <input
                         type='text'
                         placeholder='Location'
-                        style = {{fontSize:'16px'}}
+
                         name='location'
                         value={location}
                         onChange={e => onChange(e)}
@@ -110,12 +110,12 @@ const CreateProfile = ({ createProfile, history }) => {
                         City & state suggested (eg. Boston, MA)
 					</small>
                 </div>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <input
                         type='text'
                         placeholder='Skills'
                         name='skills'
-                        style = {{fontSize:'16px'}}
+
                         value={skills}
                         onChange={e => onChange(e)}
                     />
@@ -124,13 +124,13 @@ const CreateProfile = ({ createProfile, history }) => {
                         Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
 					</small>
                 </div>
-                <div style = {sel_style} className='form-group'>
+                <div  className='form-group'>
                     <input
                         type='text'
                         placeholder='Github Profile Link'
                         name='githubusername'
                         value={githubusername}
-                        style = {{fontSize:'16px'}}
+
                         onChange={e => onChange(e)}
                     />
                     <small className='form-text'>
@@ -140,7 +140,6 @@ const CreateProfile = ({ createProfile, history }) => {
                     <textarea
                         placeholder='A short bio of yourself'
                         name='bio'
-                        style = {{fontSize:'16px'}}
                         value={bio}
                         onChange={e => onChange(e)}
                     />
@@ -151,15 +150,14 @@ const CreateProfile = ({ createProfile, history }) => {
                     <button
                         onClick={() => toggleSocialInputs(!displaySocialInputs)}
                         type='button'
-                        className='btn btn-light'
-                    >
+                        className='btn btn-light'>
                         Add Social Network Links
 					</button>
                     <span>Optional</span>
                 </div>
                 {displaySocialInputs && (
                     <Fragment>
-                        <div style = {sel_style}  className='form-group social-input'>
+                        <div   className='form-group social-input'>
                             <i className='fab fa-twitter fa-2x' />
                             <input
                                 type='text'
@@ -171,39 +169,39 @@ const CreateProfile = ({ createProfile, history }) => {
                             />
                         </div>
 
-                        <div style = {sel_style}  className='form-group social-input'>
+                        <div   className='form-group social-input'>
                             <i className='fab fa-facebook fa-2x' />
                             <input
                                 type='text'
                                 placeholder='Facebook URL'
                                 name='facebook'
                                 value={facebook}
-                                style = {{fontSize:'16px'}}
+        
                                 onChange={e => onChange(e)}
                             />
                         </div>
 
 
-                        <div style = {sel_style}  className='form-group social-input'>
+                        <div   className='form-group social-input'>
                             <i className='fab fa-linkedin fa-2x' />
                             <input
                                 type='text'
                                 placeholder='Linkedin URL'
                                 name='linkedin'
                                 value={linkedin}
-                                style = {{fontSize:'16px'}}
+        
                                 onChange={e => onChange(e)}
                             />
                         </div>
 
-                        <div style = {sel_style}  className='form-group social-input'>
+                        <div   className='form-group social-input'>
                             <i className='fab fa-instagram fa-2x' />
                             <input
                                 type='text'
                                 placeholder='Instagram URL'
                                 name='instagram'
                                 value={instagram}
-                                style = {{fontSize:'16px'}}
+        
                                 onChange={e => onChange(e)}
                             />
                         </div>
@@ -233,11 +231,6 @@ const req_style = {
     color:'red',
     fontSize:'17px'
 
-}
-
-const sel_style = {
-    width:'30rem',
-    fontFamily:'Merriweather',
 }
 
 export default connect(null, { createProfile })(
