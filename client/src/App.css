@@ -526,6 +526,8 @@ button {
 
 /* Mobile Styles */
 @media (max-width: 700px) {
+
+
   .container {
     margin-top: 8rem;
   }
@@ -568,7 +570,6 @@ button {
 
   /* Profiles Page */
   .profile {
-    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -610,7 +611,12 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+
+ 
+
 }
+
+
 
 
 /* login && register form */ 
@@ -824,6 +830,24 @@ button {
       align-items: center;
 }
 
-.footer1 > input{
-  
+.profileGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 700px){
+  .profileGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width:701px) and (max-width:1100px){
+  .profileGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-content: center;
+  }
 }

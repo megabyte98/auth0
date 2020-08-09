@@ -15,7 +15,7 @@ const Profiles = ({ getAllProfiles, profile: { profiles, loading } }) => {
                 <p className="lead">
                     <i className="fab fa-connectdevelop">{ ' ' }Browse and connect with Developers</i>
                 </p>
-                <div style={profile_display} className="profiles">
+                <div  className="profileGrid">
                     {profiles.length > 0 ? (profiles.map(profile => (<ProfileItem key={profile._id} profile={profile} />))) :
                         <h4>No Profiles Found...</h4>}
                 </div>
@@ -33,11 +33,5 @@ const mapStatToProps = state => ({
     profile: state.profile
 })
 
-const profile_display = {
-    display:'grid',
-    gridTemplateColumns:'1fr 1fr 1fr',
-    
-    
-}
 
 export default connect(mapStatToProps, { getAllProfiles })(Profiles)
