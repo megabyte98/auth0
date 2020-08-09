@@ -36,26 +36,26 @@ const AddExperience = ({ addExperience, history }) => {
             <h1 className="large text-primary">
                 Add An Experience
       </h1>
-            <p style={{fontFamily:'Merriweather', fontSize:'20px'}} className="lead">
+            <p  className="lead">
                 <i className="fas fa-code-branch"></i> Add your developer/programming
         positions
       </p>
             <form className="form" onSubmit={e => onSubmit(e)}>
                 
-                <div style = {sel_style} className="form-group">
-                    <input type="text" style = {{fontSize:'16px'}} placeholder="Job Title" name="title" value={title} onChange={e => onChange(e)} required />
+                <div  className="form-group">
+                    <input type="text"  placeholder="Job Title" name="title" value={title} onChange={e => onChange(e)} required />
                 </div>
-                <div style = {sel_style} className="form-group">
-                    <input type="text" style = {{fontSize:'16px'}} placeholder="Company" name="company" value={company} onChange={e => onChange(e)} required />
+                <div  className="form-group">
+                    <input type="text"  placeholder="Company" name="company" value={company} onChange={e => onChange(e)} required />
                 </div>
-                <div style = {sel_style} className="form-group">
-                    <input type="text" style = {{fontSize:'16px'}} placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
+                <div  className="form-group">
+                    <input type="text"  placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
                 </div>
-                <div  style = {sel_style} className="form-group">
-                    <h4 style={{fontFamily:'Merriweather', fontSize:'20px'}}>From Date</h4>
-                    <input type="date" style = {{fontSize:'16px'}} name="from" value={from} onChange={e => onChange(e)} />
+                <div   className="form-group">
+                    <h4 >From Date</h4>
+                    <input type="date"  name="from" value={from} onChange={e => onChange(e)} />
                 </div>
-                <div style = {sel_style} className="form-group">
+                <div  className="form-group">
                     <p><input type="checkbox" name="current" checked={current}
                         value={current}
                         style = {{fontSize:'16px', cursor:'pointer'}}
@@ -64,12 +64,12 @@ const AddExperience = ({ addExperience, history }) => {
                             toggleDisabled(!toDateDisabled);
                         }} /> <a>{ ' ' }</a>Current Job</p>
                 </div>
-                <div style = {sel_style} className="form-group">
-                    <h4 style={{fontFamily:'Merriweather', fontSize:'20px'}}>To Date</h4>
+                <div  className="form-group">
+                    <h4 >To Date</h4>
                     <input type="date" name="to"
                         disabled={toDateDisabled ? "disabled" : ""}
                         value={to}
-                        style = {{fontSize:'16px'}}
+                        
                         onChange={e => onChange(e)} />
                 </div>
                 <div className="form-group">
@@ -78,7 +78,7 @@ const AddExperience = ({ addExperience, history }) => {
                         cols="30"
                         rows="5"
                         placeholder="Job Description"
-                        style = {{fontSize:'16px'}}
+                        
                         value={description} onChange={e => onChange(e)}
                     ></textarea>
                 </div>
