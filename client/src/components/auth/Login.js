@@ -20,15 +20,15 @@ const Login = ({ login, isAuthenticated }) => {
         return <Redirect to="/dashboard" />;
     }
     return (
-        <Fragment>
+        <div className="loginform">
 
-            <h1 className="large text-primary">Sign In</h1>
+            <h1>Sign In</h1>
             <p className="lead"><i className="fas fa-user"></i> Sign Into Your Account</p>
             <form className="form" onSubmit={e => onSubmit(e)}>
-                <div className="form-group">
+                <div className="form-group1">
                     <input type="email" placeholder="Email Address" autoComplete="off" name="email" value={email} onChange={e => onchange(e)} required />
                 </div>
-                <div className="form-group">
+                <div className="form-group1">
                     <input
                         type="password"
                         placeholder="Password"
@@ -42,9 +42,9 @@ const Login = ({ login, isAuthenticated }) => {
                 <input type="submit" className="btn btn-primary" value="Login" />
             </form>
             <p className="my-1">
-                Don't have an account? <Link to="/register">Register</Link>
+                Don't have an account? <Link className = "registerbtn" to="/register">Register</Link>
             </p>
-        </Fragment>
+        </div>
     );
 }
 
@@ -58,3 +58,4 @@ const mapStateToProps = state => ({
 })
 
 export default connect(mapStateToProps, { login })(Login) 
+

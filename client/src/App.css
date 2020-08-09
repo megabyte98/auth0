@@ -246,15 +246,26 @@ footer p{
   color : #ccc
 }
 
-/* Forms */
-.form .form-group {
+
+.form .form-group{
   margin: 1.2rem 0;
+  outline: none;
+
+}
+
+/* Forms changes */ 
+.form-group1{
+  margin: 1.2rem 0;
+  outline: none;
+  width: 20rem; 
 }
 
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
-  color: #888;
+  color:whitesmoke;
+  font-size: 12px;
+
 }
 
 .form input[type="text"],
@@ -302,12 +313,25 @@ button {
 
 .table th,
 .table td {
-  padding: 1rem;
+  padding: 0.8rem;
   text-align: left;
 }
 
-.table th {
-  background: var(--light-color);
+.table > thead > tr{
+  cursor: pointer;
+ /* border:2px solid black;*/
+
+}
+
+.table{
+  box-shadow: 4px 4px grey;
+  border:4px transparent #17a2b8;
+}
+
+.table > tbody{
+  cursor:  pointer;
+  /*border: 2px solid black;*/
+  padding: 0px;
 }
 
 /* Navbar */
@@ -587,3 +611,139 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
+
+
+/* login && register form */ 
+
+.loginform{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border:2px solid grey;
+  padding:4rem;
+  margin-top: 2rem;
+  background-color:#2e86c1;
+  box-shadow: 2px 2px #2e86c1;
+  color: white;
+  font-size: 18px;
+  border-radius: 4%;
+  opacity: 0.9;
+}
+
+
+.loginform > h1, .registform > h1{
+  color:white;
+  font-size: 32px;
+}
+
+.registerbtn{
+  color:whitesmoke;
+}
+
+.registform{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border:2px solid grey;
+  padding:2rem;
+  margin-top: 4rem;
+  background-color:#2e86c1;
+  box-shadow: 2px 2px #2e86c1;
+  color: white;
+  font-size: 18px;
+  border-radius: 4%;
+  opacity: 0.9;
+  width: 25rem;
+}
+
+
+
+
+
+
+/* profile card */
+.card-container{
+  width: 300px;
+  height: 430px;
+  background: #FFF;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  font-family: Merriweather;
+  }
+
+  .upper-container{
+  height: 150px;
+  background:  #17a2b8;
+  }
+
+  .image-container{
+  background: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(100px,100px);
+  }
+
+  .image-container img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  }
+
+  .lower-container{
+  height: 280px;
+  background: #FFF;
+  padding: 20px;
+  padding-top: 60px;
+  text-align: center;
+  }
+  .lower-container h3, h4{
+  box-sizing: border-box;
+  line-height: .6;
+
+  }
+
+  .lower-container h5{
+    font-family: 'Varta';
+  }
+
+  .lower-container h4{
+  padding-top: 1rem;
+  color: #7F00FF;
+  font-size: 14px;
+  font-weight: 300;
+  }
+
+  .lower-container p{
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 30px;
+  }
+
+  .lower-container .btn{
+  padding: 12px 20px;
+  background: #17a2b8;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .3s ease-in;
+  }
+
+
+  .lower-container .btn:hover{
+  background: transparent;
+  color: #7F00FF;
+  border: 2px solid #7F00FF;
+  }
+
+

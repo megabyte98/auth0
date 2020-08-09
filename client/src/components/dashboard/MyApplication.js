@@ -22,9 +22,9 @@ const MyApplication = ({ Myapplications,getCurrentProfile}) => {
     ));
     return (
         <Fragment>
-            <h3 className="my-2">My Job Applications</h3>
+            <h2 style={exp_style} className="my-2">My Job Applications</h2>
             <table className="table">
-                <thead>
+                <thead style =  {{ background:'#17a2b8', color:'white'}}>
                     <tr>
                         <th>Recruiter Name</th>
                         <th className="hide-sm">Applied On</th>
@@ -37,6 +37,13 @@ const MyApplication = ({ Myapplications,getCurrentProfile}) => {
         </Fragment>
     )
 }
+
+const exp_style = {
+    fontFamily:'Merriweather',
+    fontSize:'24px',
+    fontWeight:'350'
+}
+
 
 MyApplication.propTypes = {
     Myapplications: PropTypes.array.isRequired,
