@@ -11,22 +11,29 @@ const ProfileItem = ({ profile: {
     skills
 } }) => {
     return (
-        <div className="profile bg-light">
-            <img src={avatar} alt="" className="round-img" />
-            <div>
-                <h2>{name}</h2>
-                <p>{status} {company && <span>at {company}</span>}</p>
-                <p className="my-1">{location && <span>{location}</span>}</p>
-                <Link to={`/profile/${_id}`} className="btn btn-primary">View Profile</Link>
+      
+ <div class="card-container">
+         <div class="upper-container">
+            <div class="image-container">
+               <img src={avatar} />
             </div>
-            <ul>
-                {skills.slice(0, 4).map((skill, index) => (
-                    <li key={index} className="text-primary">
-                        <i className="fas fa-check" />{skill}
-                    </li>
-                ))}
-            </ul>
-        </div>
+         </div>
+         <div class="lower-container">
+            <div>
+               <h3>{name}</h3>
+               <h5>{status}</h5>
+               <h4>{company && <span>At {company}</span>}</h4>
+            </div>
+            <div>
+               <p>{location && <span>{location}</span>}
+               </p>
+            </div>
+            <div>
+                <Link to={`/profile/${_id}`} className="btn">View Profile</Link>
+
+            </div>
+         </div>
+      </div>
     )
 }
 
@@ -34,4 +41,33 @@ ProfileItem.propTypes = {
     profile: PropTypes.object.isRequired,
 }
 
+const card_style = {
+    marginRight:'3rem',
+    marginBottom:'4rem',
+    border:'1px solid black',
+    boxShadow:'2px 3px 3px 3px black',
+    background:'white',
+    display:'flex',
+    flexDirection:'column',
+    color:'black',
+    padding:'0px',
+    height:'25rem',
+    justifyContent:'space-around',
+    width:'20rem',
+    cursor:'pointer'
+}
+
+const img_style = {
+    width:'6rem',
+    height:'6rem'
+}
+
+const span_style = {
+    background:'red',
+    width:'20rem',
+    margin:'0px',
+    padding:'2rem'
+}
+
 export default ProfileItem
+

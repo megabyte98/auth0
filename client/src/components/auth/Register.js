@@ -30,13 +30,13 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         return <Redirect to="/dashboard" />
     }
     return (
-        <Fragment>
+        <div className="registform">
 
-            <h1 className="large text-primary">Sign Up</h1>
+            <h1>Sign Up</h1>
             <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
             <form className="form" onSubmit={e => onSubmit(e)}>
                 <div className="form-group">
-                    <input type="text" placeholder="Name" name="name" autoComplete="off" value={name} onChange={e => onchange(e)} />
+                    <input className = "inputField"  type="text" placeholder="Name" name="name" autoComplete="off" value={name} onChange={e => onchange(e)} />
                 </div>
                 <div className="form-group">
                     <input type="email" placeholder="Email Address" autoComplete="off" name="email" value={email} onChange={e => onchange(e)} />
@@ -67,9 +67,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 <input type="submit" className="btn btn-primary" value="Register" />
             </form>
             <p className="my-1">
-                Already have an account? <Link to="/login">Sign In</Link>
+                Already have an account? <Link className="registerbtn" to="/login">Sign In</Link>
             </p>
-        </Fragment>
+        </div>
     );
 }
 

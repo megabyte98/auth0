@@ -23,8 +23,11 @@ const Dashboard = ({ getCurrentProfile, deleteAccount, auth: { user }, profile: 
             (
                 <Fragment>
                     <DashboardActions />
+                    <br/>
                     <Experience experience={profile.experience} />
+                    <br/>
                     <Education education={profile.education} />
+                    <br/>
                     <MyApplication Myapplications={profile.appliedJobs} /> :
                         
                     <div className='my-2'>

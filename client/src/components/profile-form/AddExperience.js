@@ -36,38 +36,40 @@ const AddExperience = ({ addExperience, history }) => {
             <h1 className="large text-primary">
                 Add An Experience
       </h1>
-            <p className="lead">
-                <i className="fas fa-code-branch"></i> Add any developer/programming
-        positions that you have had in the past
+            <p style={{fontFamily:'Merriweather', fontSize:'20px'}} className="lead">
+                <i className="fas fa-code-branch"></i> Add your developer/programming
+        positions
       </p>
-            <small>* = required field</small>
             <form className="form" onSubmit={e => onSubmit(e)}>
-                <div className="form-group">
-                    <input type="text" placeholder="* Job Title" name="title" value={title} onChange={e => onChange(e)} required />
+                
+                <div style = {sel_style} className="form-group">
+                    <input type="text" style = {{fontSize:'16px'}} placeholder="Job Title" name="title" value={title} onChange={e => onChange(e)} required />
                 </div>
-                <div className="form-group">
-                    <input type="text" placeholder="* Company" name="company" value={company} onChange={e => onChange(e)} required />
+                <div style = {sel_style} className="form-group">
+                    <input type="text" style = {{fontSize:'16px'}} placeholder="Company" name="company" value={company} onChange={e => onChange(e)} required />
                 </div>
-                <div className="form-group">
-                    <input type="text" placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
+                <div style = {sel_style} className="form-group">
+                    <input type="text" style = {{fontSize:'16px'}} placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
                 </div>
-                <div className="form-group">
-                    <h4>From Date</h4>
-                    <input type="date" name="from" value={from} onChange={e => onChange(e)} />
+                <div  style = {sel_style} className="form-group">
+                    <h4 style={{fontFamily:'Merriweather', fontSize:'20px'}}>From Date</h4>
+                    <input type="date" style = {{fontSize:'16px'}} name="from" value={from} onChange={e => onChange(e)} />
                 </div>
-                <div className="form-group">
+                <div style = {sel_style} className="form-group">
                     <p><input type="checkbox" name="current" checked={current}
                         value={current}
+                        style = {{fontSize:'16px', cursor:'pointer'}}
                         onChange={() => {
                             setFormData({ ...formData, current: !current });
                             toggleDisabled(!toDateDisabled);
-                        }} /> {' '}Current Job</p>
+                        }} /> <a>{ ' ' }</a>Current Job</p>
                 </div>
-                <div className="form-group">
-                    <h4>To Date</h4>
+                <div style = {sel_style} className="form-group">
+                    <h4 style={{fontFamily:'Merriweather', fontSize:'20px'}}>To Date</h4>
                     <input type="date" name="to"
                         disabled={toDateDisabled ? "disabled" : ""}
                         value={to}
+                        style = {{fontSize:'16px'}}
                         onChange={e => onChange(e)} />
                 </div>
                 <div className="form-group">
@@ -76,6 +78,7 @@ const AddExperience = ({ addExperience, history }) => {
                         cols="30"
                         rows="5"
                         placeholder="Job Description"
+                        style = {{fontSize:'16px'}}
                         value={description} onChange={e => onChange(e)}
                     ></textarea>
                 </div>
@@ -89,5 +92,17 @@ const AddExperience = ({ addExperience, history }) => {
 AddExperience.propTypes = {
     addExperience: PropTypes.func.isRequired
 }
+
+const req_style = {
+    color:'red',
+    fontSize:'17px'
+
+}
+
+const sel_style = {
+    width:'30rem',
+    fontFamily:'Merriweather',
+}
+
 
 export default connect(null, { addExperience })(withRouter(AddExperience))
