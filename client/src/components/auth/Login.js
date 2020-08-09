@@ -4,6 +4,8 @@ import { connect } from "react-redux"
 import PropTypes from "prop-types"
 import { login } from "../../actions/auth"
 
+import loginImg from "./login.svg";
+
 const Login = ({ login, isAuthenticated }) => {
     const [formData, setFormData] = useState({
         email: '',
@@ -20,7 +22,58 @@ const Login = ({ login, isAuthenticated }) => {
         return <Redirect to="/dashboard" />;
     }
     return (
-        <div className="loginform">
+    <div className="base-container">
+        <div className="loginheader">Login</div>
+        <div className="content">
+          <div className="loginimage">
+            <img src={loginImg} />
+          </div>
+        </div>
+        <form className="form" onSubmit={e => onSubmit(e)}>
+            <div className="loginform">
+                <div className="form-group">
+                    <input type="email" placeholder="Email Address" autoComplete="off" name="email" value={email} onChange={e => onchange(e)} required />
+                </div>
+                <div className="form-group">
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                        value={password}
+                        onChange={e => onchange(e)}
+                        minLength="6"
+                        required
+                    />
+                </div>
+            </div>
+            <div className="footer1">
+            <input type="submit" className="btn btn-primary" value="Login" />
+            </div>
+        </form>
+        <br/>
+        <p className="my-1">
+                Don't have an account? <Link className = "registerbtn" to="/register">Register</Link>
+        </p>
+      </div>
+        
+    );
+}
+
+Login.propTypes = {
+    login: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool
+}
+
+const mapStateToProps = state => ({
+    isAuthenticated: state.auth.isAuthenticated
+})
+
+export default connect(mapStateToProps, { login })(Login) 
+
+
+/*
+
+<div className="loginform">
 
             <h1>Sign In</h1>
             <p className="lead"><i className="fas fa-user"></i> Sign Into Your Account</p>
@@ -45,17 +98,5 @@ const Login = ({ login, isAuthenticated }) => {
                 Don't have an account? <Link className = "registerbtn" to="/register">Register</Link>
             </p>
         </div>
-    );
-}
 
-Login.propTypes = {
-    login: PropTypes.func.isRequired,
-    isAuthenticated: PropTypes.bool
-}
-
-const mapStateToProps = state => ({
-    isAuthenticated: state.auth.isAuthenticated
-})
-
-export default connect(mapStateToProps, { login })(Login) 
-
+*/
