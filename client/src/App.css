@@ -311,27 +311,29 @@ button {
   color: #0077b5;
 }
 
-.table th,
-.table td {
-  padding: 0.8rem;
-  text-align: left;
-}
-
-.table > thead > tr{
-  cursor: pointer;
- /* border:2px solid black;*/
-
-}
-
 .table{
+  width: 60rem;
   box-shadow: 4px 4px grey;
   border:4px transparent #17a2b8;
 }
 
+
+
+.table th,
+.table td {
+  padding: 0.4rem;
+  text-align: left;
+}
+
+
+
+
+
+
 .table > tbody{
   cursor:  pointer;
   /*border: 2px solid black;*/
-  padding: 0px;
+  padding: 4px;
 }
 
 /* Navbar */

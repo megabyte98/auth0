@@ -24,7 +24,7 @@ const Education = ({ education, deleteEducation }) => {
         <div>
             <h2  style = {exp_style} className="my-2">Education Credentials </h2>
             <table className="table">
-                <thead style = {{ background:'#17a2b8', color:'white'}}>
+                <thead style = {{ background:'#17a2b8', color:'white', padding:'2rem'}}>
                     <tr>
                         <th>School/College</th>
                         <th className="hide-sm">Degree/Certificate</th>
