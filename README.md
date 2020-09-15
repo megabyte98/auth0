@@ -40,10 +40,11 @@ It is a platform to connect developers across the community to share their proje
 <h5>8. To run frontend: npm run client</h5>
 <h5>9. To run dynamically both frontend and backend: npm run dev</h5>
 
+</br>
 <h4>To run in productio mode: </h4>
 <h5>Follow the above steps from 1-6</h5>
-<h5>run : npm build</h5>
+<h5>then run : npm build</h5>
 
 </br>
-<h4>Source code</h4>
-<h5>Get the source code of this project in zip format directly with the link : https://he-s3.s3.amazonaws.com/media/sprint/recruit-a-thon/team/870325/4c86ae4auth0.zip <h5>
+<h3>Source code : </h3>
+<h4>Get the source code of this project in zip format directly with the link : https://he-s3.s3.amazonaws.com/media/sprint/recruit-a-thon/team/870325/4c86ae4auth0.zip <h4>
