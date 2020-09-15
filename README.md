@@ -13,3 +13,7 @@
 <h4>
 It is a platform to connect developers across the community to share their projects and have collaborations for their projects with the interested ones and also discuss on topic of interest with fellow developers. Developers can also link their GitHub accounts and can showcase their projects so when other recruiters post their job offers they can easy filter out the developers and find the right one. The Developers section has all the developers profile where others can talk with them for collaborations or job offers. In Post sections, Developers can discuss about the topic of interest and if people can also post about programming things and get the solutions by starting a thread of conversation
 </h4>
+
+<h3>Snapshots:</h3>
+
+![one](./snapshots/1.jpg)
