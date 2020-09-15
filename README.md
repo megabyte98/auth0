@@ -15,5 +15,11 @@ It is a platform to connect developers across the community to share their proje
 </h4>
 
 <h3>Snapshots:</h3>
+</br>
 
 ![one](./snapshots/1.jpg)
+![two](./snapshots/2.jpg)
+![three](./snapshots/3.jpg)
+![four](./snapshots/4.jpg)
+![five](./snapshots/5.jpg)
+![six](./snapshots/6.jpg)
