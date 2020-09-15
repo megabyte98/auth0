@@ -52,4 +52,4 @@ It is a platform to connect developers across the community to share their proje
 </br>
 
 <h3>Demo video link: </h3>
-<h4></h4>
+<h4>https://youtu.be/NACZwyVZMJU</h4>
