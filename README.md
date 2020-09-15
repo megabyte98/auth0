@@ -16,13 +16,13 @@ It is a platform to connect developers across the community to share their proje
 
 <h3>Snapshots:</h3>
 </br>
-<img width="500"  src="./snapshots/1.jpg">
-<img width="500"  src="./snapshots/2.jpg">
-<img width="500"  src="./snapshots/3.jpg">
-<img width="500"  src="./snapshots/4.jpg">
-<img width="500"  src="./snapshots/5.jpg">
-<img width="500"  src="./snapshots/6.jpg">
 
+![one](./snapshots/1.jpg)
+![two](./snapshots/2.jpg)
+![three](./snapshots/3.jpg)
+![four](./snapshots/4.jpg)
+![five](./snapshots/5.jpg)
+![six](./snapshots/6.jpg)
 
 </br>
 
@@ -48,3 +48,8 @@ It is a platform to connect developers across the community to share their proje
 </br>
 <h3>Source code : </h3>
 <h4>Get the source code of this project in zip format directly with the link : https://he-s3.s3.amazonaws.com/media/sprint/recruit-a-thon/team/870325/4c86ae4auth0.zip <h4>
+
+</br>
+
+<h3>Demo video link: </h3>
+<h4></h4>
