@@ -30,7 +30,6 @@ It is a platform to connect developers across the community to share their proje
 <h4>
   To run in development mode:
 </h4>
-</br>
 <h5>1. Fork this repo and clone : https://github.com/megabyte98/auth0.git</h5>
 <h5>2. Navigate to the root of the project.</h5>
 <h5>3. Make sure you have yarn Node.js, npm & MongoDB installed in your system.</h5>
@@ -41,3 +40,10 @@ It is a platform to connect developers across the community to share their proje
 <h5>8. To run frontend: npm run client</h5>
 <h5>9. To run dynamically both frontend and backend: npm run dev</h5>
 
+<h4>To run in productio mode: </h4>
+<h5>Follow the above steps from 1-6</h5>
+<h5>run : npm build</h5>
+
+</br>
+<h4>Source code</h4>
+<h5>Get the source code of this project in zip format directly with the link : https://he-s3.s3.amazonaws.com/media/sprint/recruit-a-thon/team/870325/4c86ae4auth0.zip <h5>
