@@ -23,3 +23,20 @@ It is a platform to connect developers across the community to share their proje
 ![four](./snapshots/4.jpg)
 ![five](./snapshots/5.jpg)
 ![six](./snapshots/6.jpg)
+
+</br>
+
+<h3>Run Locally : <h3>
+<h4>
+To run in development mode:
+1. Fork this repo and clone : https://github.com/megabyte98/auth0.git
+2. Navigate to the root of the project.
+3. Make sure you have yarn Node.js, npm & MongoDB installed in your system.
+4. run : npm install.
+5. navigate to client: cd client and run: npm install.
+6. Navigate back to root of the project.
+7. To run server: npm run server
+8. To run frontend: npm run client
+9. To run dynamically both frontend and backend: npm run dev
+
+</h4>
